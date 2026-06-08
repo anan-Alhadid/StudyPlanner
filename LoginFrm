@@ -194,9 +194,23 @@ public class LoginFrm extends javax.swing.JFrame {
     }                                        
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        HomeFrm h=new HomeFrm();
-        h.setVisible(true);
-        this.setVisible(false);
+     String email = txtEmail.getText();
+     String password = String.valueOf(PwdPassword.getPassword());
+
+    if(email.isEmpty() || password.isEmpty()){
+    javax.swing.JOptionPane.showMessageDialog(this, "Please enter email and password");
+   }
+    else if(email.equals("Admin") && password.equals("123456")){
+    HomeFrm h = new HomeFrm();
+    h.setVisible(true);
+    this.setVisible(false);
+  }
+    else if(!email.equals("Admin")){
+    javax.swing.JOptionPane.showMessageDialog(this, "Email not found");
+ }
+  else{
+    javax.swing.JOptionPane.showMessageDialog(this, "Wrong password");
+}
     }                                        
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {                                          
