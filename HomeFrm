@@ -25,42 +25,46 @@ public class HomeFrm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        pnldate = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         lblStudyPlanner = new javax.swing.JLabel();
-        lblBell = new javax.swing.JLabel();
         lblMenu = new javax.swing.JLabel();
         lblTodayTask = new javax.swing.JLabel();
         pnlMath = new javax.swing.JPanel();
         chkMathHomeWork = new javax.swing.JCheckBox();
         lblTimeMath = new javax.swing.JLabel();
         lblHighMath = new javax.swing.JLabel();
+        btnEditTask = new javax.swing.JButton();
         pnlProjectPresentaion = new javax.swing.JPanel();
         chkProjectPresentaion = new javax.swing.JCheckBox();
         lblTimeProjectPresentaion = new javax.swing.JLabel();
         lblHighProjectPresentaion = new javax.swing.JLabel();
+        btnEditTask2 = new javax.swing.JButton();
         pnlReadChapter3 = new javax.swing.JPanel();
         chkReadChapter3 = new javax.swing.JCheckBox();
         lblTimeReadChapter3 = new javax.swing.JLabel();
         lblMediumReadChapter3 = new javax.swing.JLabel();
+        btnEditTask3 = new javax.swing.JButton();
         pnlReviewForExam = new javax.swing.JPanel();
         chkReviewForExam = new javax.swing.JCheckBox();
         lblTimeReviewForExam = new javax.swing.JLabel();
         lblLowReviewForExam = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        btnEditTask4 = new javax.swing.JButton();
+        pnlToday = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        pnlCalender = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
+        pnlTasks = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
         btnAddTask = new javax.swing.JButton();
+        btnReminder = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pnldate.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -71,11 +75,11 @@ public class HomeFrm extends javax.swing.JFrame {
 
         jLabel3.setText("❮");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnldateLayout = new javax.swing.GroupLayout(pnldate);
+        pnldate.setLayout(pnldateLayout);
+        pnldateLayout.setHorizontalGroup(
+            pnldateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnldateLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -83,25 +87,23 @@ public class HomeFrm extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+        pnldateLayout.setVerticalGroup(
+            pnldateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnldateLayout.createSequentialGroup()
+                .addGroup(pnldateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnldateLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(pnldateLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(pnldateLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         lblStudyPlanner.setText("Study Planner");
-
-        lblBell.setText("🔔");
 
         lblMenu.setText("☰");
 
@@ -115,6 +117,13 @@ public class HomeFrm extends javax.swing.JFrame {
 
         lblHighMath.setText("High");
 
+        btnEditTask.setText("Edit Task");
+        btnEditTask.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditTaskActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlMathLayout = new javax.swing.GroupLayout(pnlMath);
         pnlMath.setLayout(pnlMathLayout);
         pnlMathLayout.setHorizontalGroup(
@@ -127,6 +136,8 @@ public class HomeFrm extends javax.swing.JFrame {
                         .addComponent(lblTimeMath, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(chkMathHomeWork))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnEditTask)
+                .addGap(18, 18, 18)
                 .addComponent(lblHighMath, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -135,7 +146,9 @@ public class HomeFrm extends javax.swing.JFrame {
             .addGroup(pnlMathLayout.createSequentialGroup()
                 .addComponent(chkMathHomeWork)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblTimeMath)
+                .addGroup(pnlMathLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTimeMath)
+                    .addComponent(btnEditTask))
                 .addContainerGap())
             .addGroup(pnlMathLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
@@ -151,6 +164,13 @@ public class HomeFrm extends javax.swing.JFrame {
 
         lblHighProjectPresentaion.setText("High");
 
+        btnEditTask2.setText("Edit Task");
+        btnEditTask2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditTask2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlProjectPresentaionLayout = new javax.swing.GroupLayout(pnlProjectPresentaion);
         pnlProjectPresentaion.setLayout(pnlProjectPresentaionLayout);
         pnlProjectPresentaionLayout.setHorizontalGroup(
@@ -161,8 +181,10 @@ public class HomeFrm extends javax.swing.JFrame {
                     .addComponent(chkProjectPresentaion)
                     .addGroup(pnlProjectPresentaionLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(lblTimeProjectPresentaion)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblTimeProjectPresentaion)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnEditTask2)))
+                .addGap(18, 18, 18)
                 .addComponent(lblHighProjectPresentaion, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -171,7 +193,9 @@ public class HomeFrm extends javax.swing.JFrame {
             .addGroup(pnlProjectPresentaionLayout.createSequentialGroup()
                 .addComponent(chkProjectPresentaion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblTimeProjectPresentaion)
+                .addGroup(pnlProjectPresentaionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTimeProjectPresentaion)
+                    .addComponent(btnEditTask2))
                 .addContainerGap())
             .addGroup(pnlProjectPresentaionLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
@@ -187,6 +211,13 @@ public class HomeFrm extends javax.swing.JFrame {
 
         lblMediumReadChapter3.setText("Medium");
 
+        btnEditTask3.setText("Edit Task");
+        btnEditTask3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditTask3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlReadChapter3Layout = new javax.swing.GroupLayout(pnlReadChapter3);
         pnlReadChapter3.setLayout(pnlReadChapter3Layout);
         pnlReadChapter3Layout.setHorizontalGroup(
@@ -197,8 +228,10 @@ public class HomeFrm extends javax.swing.JFrame {
                     .addComponent(chkReadChapter3)
                     .addGroup(pnlReadChapter3Layout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(lblTimeReadChapter3)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblTimeReadChapter3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnEditTask3)))
+                .addGap(18, 18, 18)
                 .addComponent(lblMediumReadChapter3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -207,7 +240,9 @@ public class HomeFrm extends javax.swing.JFrame {
             .addGroup(pnlReadChapter3Layout.createSequentialGroup()
                 .addComponent(chkReadChapter3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblTimeReadChapter3)
+                .addGroup(pnlReadChapter3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTimeReadChapter3)
+                    .addComponent(btnEditTask3))
                 .addContainerGap())
             .addGroup(pnlReadChapter3Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
@@ -228,6 +263,13 @@ public class HomeFrm extends javax.swing.JFrame {
 
         lblLowReviewForExam.setText("Low");
 
+        btnEditTask4.setText("Edit Task");
+        btnEditTask4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditTask4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnlReviewForExamLayout = new javax.swing.GroupLayout(pnlReviewForExam);
         pnlReviewForExam.setLayout(pnlReviewForExamLayout);
         pnlReviewForExamLayout.setHorizontalGroup(
@@ -238,8 +280,10 @@ public class HomeFrm extends javax.swing.JFrame {
                     .addComponent(chkReviewForExam)
                     .addGroup(pnlReviewForExamLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(lblTimeReviewForExam)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblTimeReviewForExam)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnEditTask4)))
+                .addGap(18, 18, 18)
                 .addComponent(lblLowReviewForExam, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -248,7 +292,9 @@ public class HomeFrm extends javax.swing.JFrame {
             .addGroup(pnlReviewForExamLayout.createSequentialGroup()
                 .addComponent(chkReviewForExam)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblTimeReviewForExam)
+                .addGroup(pnlReviewForExamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTimeReviewForExam)
+                    .addComponent(btnEditTask4))
                 .addContainerGap())
             .addGroup(pnlReviewForExamLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
@@ -256,7 +302,7 @@ public class HomeFrm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pnlToday.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton1.setText("Today");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -265,21 +311,21 @@ public class HomeFrm extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlTodayLayout = new javax.swing.GroupLayout(pnlToday);
+        pnlToday.setLayout(pnlTodayLayout);
+        pnlTodayLayout.setHorizontalGroup(
+            pnlTodayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlTodayLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnlTodayLayout.setVerticalGroup(
+            pnlTodayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
-        jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pnlCalender.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton2.setText("Calender");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -288,21 +334,21 @@ public class HomeFrm extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlCalenderLayout = new javax.swing.GroupLayout(pnlCalender);
+        pnlCalender.setLayout(pnlCalenderLayout);
+        pnlCalenderLayout.setHorizontalGroup(
+            pnlCalenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlCalenderLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnlCalenderLayout.setVerticalGroup(
+            pnlCalenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jButton2)
         );
 
-        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pnlTasks.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton3.setText("Tasks");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -311,17 +357,17 @@ public class HomeFrm extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlTasksLayout = new javax.swing.GroupLayout(pnlTasks);
+        pnlTasks.setLayout(pnlTasksLayout);
+        pnlTasksLayout.setHorizontalGroup(
+            pnlTasksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlTasksLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton3)
                 .addContainerGap())
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pnlTasksLayout.setVerticalGroup(
+            pnlTasksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jButton3)
         );
 
@@ -329,6 +375,13 @@ public class HomeFrm extends javax.swing.JFrame {
         btnAddTask.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddTaskActionPerformed(evt);
+            }
+        });
+
+        btnReminder.setText("🔔");
+        btnReminder.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReminderActionPerformed(evt);
             }
         });
 
@@ -340,26 +393,27 @@ public class HomeFrm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(pnldate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblTodayTask)
+                                .addComponent(pnlMath, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(pnlProjectPresentaion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(pnlReadChapter3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(pnlReviewForExam, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(40, 40, 40)
                                 .addComponent(lblStudyPlanner)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblBell, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblTodayTask)
-                            .addComponent(pnlMath, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pnlProjectPresentaion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pnlReadChapter3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pnlReviewForExam, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGap(18, 18, 18)
+                                .addComponent(btnReminder, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(pnlToday, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(pnlCalender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(pnlTasks, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(149, 149, 149)
                         .addComponent(btnAddTask)))
@@ -371,10 +425,10 @@ public class HomeFrm extends javax.swing.JFrame {
                 .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblStudyPlanner, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblBell)
-                    .addComponent(lblMenu))
+                    .addComponent(lblMenu)
+                    .addComponent(btnReminder))
                 .addGap(18, 18, 18)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnldate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblTodayTask)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -389,11 +443,10 @@ public class HomeFrm extends javax.swing.JFrame {
                 .addComponent(btnAddTask)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(67, Short.MAX_VALUE))
+                    .addComponent(pnlToday, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlCalender, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlTasks, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         pack();
@@ -427,6 +480,37 @@ public class HomeFrm extends javax.swing.JFrame {
         a.setVisible(true);
         this.setVisible(false);
     }                                          
+
+    private void btnReminderActionPerformed(java.awt.event.ActionEvent evt) {                                            
+    RemindersFrm r = new RemindersFrm();
+    r.setVisible(true);
+    this.setVisible(false);
+
+    }                                           
+
+    private void btnEditTaskActionPerformed(java.awt.event.ActionEvent evt) {                                            
+    EditTaskFrm e = new EditTaskFrm();
+    e.setVisible(true);
+    this.setVisible(false);
+    }                                           
+
+    private void btnEditTask2ActionPerformed(java.awt.event.ActionEvent evt) {                                             
+    EditTaskFrm e = new EditTaskFrm();
+    e.setVisible(true);
+    this.setVisible(false);
+    }                                            
+
+    private void btnEditTask3ActionPerformed(java.awt.event.ActionEvent evt) {                                             
+    EditTaskFrm e = new EditTaskFrm();
+    e.setVisible(true);
+    this.setVisible(false);
+    }                                            
+
+    private void btnEditTask4ActionPerformed(java.awt.event.ActionEvent evt) {                                             
+    EditTaskFrm e = new EditTaskFrm();
+    e.setVisible(true);
+    this.setVisible(false);
+    }                                            
 
     /**
      * @param args the command line arguments
@@ -465,6 +549,11 @@ public class HomeFrm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify                     
     private javax.swing.JButton btnAddTask;
+    private javax.swing.JButton btnEditTask;
+    private javax.swing.JButton btnEditTask2;
+    private javax.swing.JButton btnEditTask3;
+    private javax.swing.JButton btnEditTask4;
+    private javax.swing.JButton btnReminder;
     private javax.swing.JCheckBox chkMathHomeWork;
     private javax.swing.JCheckBox chkProjectPresentaion;
     private javax.swing.JCheckBox chkReadChapter3;
@@ -474,13 +563,8 @@ public class HomeFrm extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JLabel lblBell;
     private javax.swing.JLabel lblHighMath;
     private javax.swing.JLabel lblHighProjectPresentaion;
     private javax.swing.JLabel lblLowReviewForExam;
@@ -492,9 +576,13 @@ public class HomeFrm extends javax.swing.JFrame {
     private javax.swing.JLabel lblTimeReadChapter3;
     private javax.swing.JLabel lblTimeReviewForExam;
     private javax.swing.JLabel lblTodayTask;
+    private javax.swing.JPanel pnlCalender;
     private javax.swing.JPanel pnlMath;
     private javax.swing.JPanel pnlProjectPresentaion;
     private javax.swing.JPanel pnlReadChapter3;
     private javax.swing.JPanel pnlReviewForExam;
+    private javax.swing.JPanel pnlTasks;
+    private javax.swing.JPanel pnlToday;
+    private javax.swing.JPanel pnldate;
     // End of variables declaration                   
 }
